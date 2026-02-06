@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Propose Day 💙</title>
+<title>8 Feb 💙</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
@@ -16,19 +16,19 @@ body{
   display:flex;
   align-items:center;
   justify-content:center;
+  overflow:hidden;
+  color:#fff;
   background:
     radial-gradient(60% 40% at 15% 10%, #6a85ff55, transparent 60%),
     radial-gradient(50% 40% at 90% 20%, #ff7eb355, transparent 60%),
     radial-gradient(40% 30% at 50% 90%, #43cea244, transparent 60%),
     linear-gradient(135deg,#0f1220,#1b1f33);
-  color:#fff;
-  overflow:hidden;
 }
 
-/* card */
+/* Card */
 .card{
   width:min(92vw,420px);
-  background:rgba(255,255,255,.10);
+  background:rgba(255,255,255,.12);
   backdrop-filter:blur(18px);
   border-radius:28px;
   padding:28px 22px;
@@ -41,8 +41,11 @@ body{
   to{opacity:1;transform:scale(1)}
 }
 
-/* text */
-.small{opacity:.9;font-size:14px}
+/* Text */
+.small{
+  font-size:14px;
+  opacity:.9;
+}
 .name{
   font-family:'Great Vibes',cursive;
   font-size:44px;
@@ -54,7 +57,7 @@ body{
   line-height:1.7;
 }
 
-/* buttons */
+/* Buttons */
 .buttons{
   margin-top:22px;
   display:flex;
@@ -62,7 +65,7 @@ body{
   justify-content:center;
 }
 .btn{
-  padding:12px 20px;
+  padding:12px 22px;
   border-radius:22px;
   border:none;
   cursor:pointer;
@@ -76,12 +79,12 @@ body{
 }
 .btn-yes:hover{transform:scale(1.08)}
 .btn-no{
-  background:rgba(255,255,255,.15);
+  background:rgba(255,255,255,.18);
   color:#fff;
 }
 .btn-no:hover{transform:scale(1.05)}
 
-/* result */
+/* Result */
 .result{display:none}
 .shayari{
   margin-top:14px;
@@ -98,7 +101,7 @@ body{
   opacity:.85;
 }
 
-/* floating hearts */
+/* Floating hearts */
 .heart{
   position:fixed;
   bottom:-10%;
@@ -116,17 +119,19 @@ body{
 
 <!-- START -->
 <div class="card" id="start">
-  <div class="small">6th Feb — Propose Day 💫</div>
+  <!-- ✅ UPDATED DATE HERE -->
+  <div class="small">8 Feb — Propose Day 💫</div>
+
   <div class="name">Dhruti</div>
 
   <div class="main-text">
     आज मैं कोई romantic proposal नहीं कर रहा…<br>
-    बस एक सच्ची सी बात पूछना चाहता हूँ।
+    बस दिल से एक बात कहना चाहता हूँ।
   </div>
 
   <div class="buttons">
-    <button class="btn btn-yes" onclick="accept()">पूछो 🙂</button>
-    <button class="btn btn-no" onclick="later()">पहले सोचूँ 🤔</button>
+    <button class="btn btn-yes" onclick="accept()">कहो 🙂</button>
+    <button class="btn btn-no" onclick="later()">थोड़ा सोचूँ 🤔</button>
   </div>
 </div>
 
@@ -138,7 +143,7 @@ body{
 
   <div class="footer">
     Happy Propose Day 💙<br>
-    – From your bestest friend
+    – तुम्हारा bestest friend
   </div>
 </div>
 
@@ -151,13 +156,13 @@ function accept(){
   box.innerHTML="";
 
   const lines=[
-    ["मैं propose करता हूँ…", "#bcdcff"],
+    ["मैं propose करता हूँ…", "#cfe2ff"],
     ["कि हमारी दोस्ती वैसी ही रहे,", "#ffffff"],
-    ["बिना pressure, बिना expectation,", "#cdefff"],
-    ["बस respect और trust के साथ।", "#ffffff"],
+    ["बिना दबाव, बिना उम्मीदों के,", "#d7f0ff"],
+    ["बस भरोसे और सम्मान के साथ।", "#ffffff"],
     ["", "#fff"],
-    ["ये इज़हार नहीं,", "#ffd6e8"],
-    ["ये साथ निभाने का इरादा है।", "#ffffff"]
+    ["ये इज़हार नहीं है,", "#ffd6e8"],
+    ["ये हमेशा साथ निभाने का वादा है।", "#ffffff"]
   ];
 
   lines.forEach(l=>{
@@ -171,7 +176,7 @@ function accept(){
 }
 
 function later(){
-  alert("कोई जल्दी नहीं 🙂\nये proposal हमेशा valid रहेगा 💙");
+  alert("कोई जल्दी नहीं 🙂\nये बात जब चाहो तब भी उतनी ही खास रहेगी 💙");
 }
 
 function hearts(){
